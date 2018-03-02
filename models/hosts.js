@@ -1,6 +1,4 @@
-// var Sequelize = require("sequelize");
-// var sequelize = require("../config/db.js");
-// var DataTypes = require("sequelize/lib/data-types");
+
 module.exports = function(sequelize, DataTypes) {
   var Hosts = sequelize.define(
     "Hosts",
@@ -41,7 +39,7 @@ module.exports = function(sequelize, DataTypes) {
       peoplecount: {
         type: DataTypes.INTEGER
       }
-      //TODO check date/time datatypes
+      
     },
     {
       timestamps: false

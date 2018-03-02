@@ -1,6 +1,3 @@
-// var Sequelize = require("sequelize");
-// var sequelize = require("../config/db.js")
-// var DataTypes = require("sequelize/lib/data-types");
 
 module.exports = function(sequelize, DataTypes){
   var Events = sequelize.define("Events", {
@@ -28,7 +25,7 @@ module.exports = function(sequelize, DataTypes){
     charity: {
       type: DataTypes.STRING
     }
-    //TODO check date/time datatypes
+    
   },{
     timestamps: false
   }

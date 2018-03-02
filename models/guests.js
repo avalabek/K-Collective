@@ -1,6 +1,4 @@
-// var Sequelize = require("sequelize");
-// var sequelize = require("../config/db.js");
-// var DataTypes = require("sequelize/lib/data-types");
+
 module.exports = function(sequelize, DataTypes) {
   var Guests = sequelize.define(
     "Guests",
@@ -28,7 +26,6 @@ module.exports = function(sequelize, DataTypes) {
       }
       
       
-      //TODO check date/time datatypes
     },
     {
       timestamps: false

@@ -1,10 +1,9 @@
 #index-banner {
 	 background: url("../images/groupcooking.jpg");
 	 background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: rgba(255,0,0,10);
-     /*opacity: .4; */
-   /* /*height: 100em;*/
+  	 background-size: 100%;
+  	 background-color: rgba(255,0,0,10);
+     
 }
 
 
@@ -17,6 +16,13 @@
 	margin-top: 0px;
 
 }
+
+#logo2{
+	font-size: 35px;
+	font-weight: 999;
+}
+
+
 
 
 
@@ -31,7 +37,7 @@
   background-color: #ffffff;
 }
 .slider {
-  width: 850px;
+  width: 900px;
 
   margin: 0 auto;
 }
@@ -95,6 +101,9 @@
 
 #missionstatement { 
 	text-align: center;
+	font-size: 18px;
+	font-weight: 350;
+
 	
  }
 

@@ -24,6 +24,7 @@
         var image = $("<img>");
         image.addClass("activator");
         image.attr("src", result[i].image);
+        image.attr("height", "300px");
 
         var cardContent = $("<div>");
         cardContent.addClass("card-content");
@@ -49,7 +50,7 @@
         submitButton.attr("id", "guestlist");
         submitButton.text("Guest List");
 
-///////////////
+///////////////Card Reveal Area////////////////////////////////////////////////////////////
        
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal")
@@ -190,14 +191,6 @@
 
         card.append(cardReveal);
 
-        
-
-
-
-
-
-
-
         $("#eventCards").append(card);  
       }
     }
@@ -219,28 +212,29 @@
     console.log(newGuest);
 
 
-// Send the PUT request.
 
 
-$.ajax("/api/guests/", {
-  type: "POST",
-  data: newGuest
-}).then(
-function (res) {
-  console.log(res);
-        //the below isn't console.logging
-        console.log("added new guest: ", newGuest);
-        // Reload the page to get the updated list
-        location.reload();
-      }
-      );
-    //clear form
-    $("#first_name").val(""),
-    $("#last_name").val(""),
-    $("#email").val(""),
-    $("#phone").val(""),
-    $("#event").val()
-  });
+    $.ajax("/api/guests/", {
+      type: "POST",
+      data: newGuest
+    }).then(
+    function (res) {
+      console.log(res);
+            //the below isn't console.logging
+            console.log("added new guest: ", newGuest);
+            // Reload the page to get the updated list
+            location.reload();
+          }
+          );
+        
+        //clear form
+        $("#first_name").val(""),
+        $("#last_name").val(""),
+        $("#email").val(""),
+        $("#phone").val(""),
+        $("#event").val()
+      
+      });
 
 
 

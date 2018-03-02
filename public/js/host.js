@@ -54,52 +54,12 @@
         console.log("This is the new host" + res);
         console.log("added new host to host: ", newHost);
 
-    // var card = $("<div>");
-    // card.addClass("card-image waves-effect waves-block waves-light");
-
-    // var cardImage = $("<div>");
-    // cardImage.addClass("card-image ");
     
-    // var image = $("<img>");
-    // image.attr("src", "images/manakeesh2.JPG");
-    
-    // var cardContent = $("<div>");
-    // cardContent.addClass("card-content");
-    // cardContent.attr("id", "eventinfo");
-    // cardContent.text("Host: " newHost.first_name);
-    // cardContent.append("<br>");
-    // cardContent.text("Cuisine: " newHost.cuisine);
-    // cardContent.append("<br>");
-    // cardContent.text("Date: " newHost.date);
-    // cardContent.append("<br>");
-    // cardContent.text("Seats Remaining: " newHost.peoplecount);
-    // cardContent.append("<br>");
-
-    // var revealSpan = $("<span>");
-    // revealSpan.addClass("card-title activator grey-text text-darken-4");
-    
-    
-    //  cardImage.append(image);
-    //  card.append(cardImage);
-    //  card.append(cardContent);
-
-    //  $("event").append(card);  
-
     // Reload the page to get the updated list
       location.reload();
 });
 
-
- //send the POST request
-//  $.ajax("/api/hosts", {
-//    type: "POST",
-//    data: newHost
-
-//  }).then(function(){
-//    console.log("created new host++++++++========");
-    
-//   location.reload();
-//   });       
+   
   });
 
   //clear form
