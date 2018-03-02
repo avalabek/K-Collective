@@ -1,0 +1,30 @@
+{
+  "name": "Kitchen-Collective",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avalabek/Kitchen-Collective.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avalabek/Kitchen-Collective/issues"
+  },
+  "homepage": "https://github.com/avalabek/Kitchen-Collective#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "path": "^0.12.7",
+    "sequelize": "^4.34.0"
+  }
+}
