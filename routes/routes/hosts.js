@@ -20,6 +20,14 @@ module.exports = function (app, db){
   });
 
   app.post("/api/hosts", function(req, res) {
+    var cuisine = function(x){
+      if (typeof x !== "string"){
+        throw new Error("Cuisine must be written in words.");
+        
+    }else return x;
+  };
+  isValid = cuisine(req.body.cuisine);
+  if(isValid){
     db.Hosts.create({
       firstname: req.body.firstname,
       lastname: req.body.lastname,
@@ -34,8 +42,11 @@ module.exports = function (app, db){
     }).then(function(result) {
       res.json(result);
       console.log("Your host: ", req.body.firstname);
-    })
+    });
+  } else {
+    alert("Please enter a valid cuisine.");
+  }
   });
   
   
-}
+};
