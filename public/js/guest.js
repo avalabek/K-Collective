@@ -184,15 +184,14 @@ $(document).ready(function(){
 });
 
 
-
-$("#register").on("click", function (event) {
+$(document).on('click', '#register', function(){  //$("#register").on("click", function (event) {
     event.preventDefault();
     var newGuest = {
       first_name: $("#first_name").val(),
       last_name: $("#last_name").val(),
       email: $("#email").val(),
-      phone: $("#phone").val(),
-      event: $("#event").val()
+      phone: $("#phone").val()
+      
     };
 
     console.log(newGuest);
@@ -214,8 +213,8 @@ $("#register").on("click", function (event) {
         $("#first_name").val(""),
         $("#last_name").val(""),
         $("#email").val(""),
-        $("#phone").val(""),
-        $("#event").val()
+        $("#phone").val("")
+        
 
 });
 

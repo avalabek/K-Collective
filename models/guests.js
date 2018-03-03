@@ -20,10 +20,8 @@ module.exports = function(sequelize, DataTypes) {
       },
       phone: {
         type: DataTypes.STRING
-      },
-      event: {
-        type: DataTypes.STRING
       }
+      
       
       
     },

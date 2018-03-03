@@ -26,8 +26,8 @@ module.exports = function(app, db) {
       first_name: req.body.first_name,
       last_name: req.body.last_name,
       email: req.body.email,
-      phone: req.body.phone,
-      event:req.body.event
+      phone: req.body.phone
+
     }).then(function (result) {
       res.json(result);
       console.log("New guest: ", req.body.first_name);
